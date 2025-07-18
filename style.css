@@ -1,0 +1,177 @@
+/* style.css */
+
+/* RESET BÁSICO */
+body, h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #b388ff;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #b388ff;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* INICIO */
+#inicio {
+  height: 100vh;
+  background: linear-gradient(180deg, #1e1e2f 0%, #121212 100%);
+  color: #fff;
+}
+
+#inicio .contacto {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.logo-personal {
+  max-width: 400px;
+  border: 5px solid #4c4e72;
+  box-shadow: 0 0 20px rgba(199, 209, 55, 0.5);
+  transition: transform 0.5s;
+}
+
+.foto-mi:hover {
+  transform: scale(1.05);
+}
+/* SOBRE MÍ */
+.foto-mi {
+  max-width: 300px;
+  border: 5px solid #b388ff;
+  box-shadow: 0 0 20px rgba(179, 136, 255, 0.5);
+  transition: transform 0.5s;
+}
+
+.foto-mi:hover,.logo-personal:hover {
+  transform: scale(1.05);
+}
+
+/* CURRÍCULUM */
+.progress {
+  height: 30px;
+  border-radius: 20px;
+  background-color: #2b2b2b;
+}
+
+.progress-bar {
+  font-weight: bold;
+  font-size: 0.95rem;
+  border-radius: 20px;
+  line-height: 30px;
+}
+
+/* PORTAFOLIO */
+.portfolio-card {
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-card img {
+  transition: transform 0.4s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.1);
+}
+
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.portfolio-card:hover .card-img-overlay {
+  opacity: 1;
+}
+
+.card-title, .card-text, .btn {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+/* BLOG */
+.blog-entry {
+  background-color: #222;
+  padding: 20px;
+  border-left: 5px solid #b388ff;
+  border-radius: 10px;
+  color: #eee;
+  box-shadow: 0 0 10px rgba(179, 136, 255, 0.2);
+}
+
+/* FOOTER */
+footer a {
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  color: #b388ff;
+  transition: 0.3s;
+}
+
+.paragraph{
+    text-align: justify;
+}
+
+/* Estilos para formulario de contacto */
+#contacto {
+  background: #1a1a1a;
+  color: white;
+  padding: 60px 0;
+  border-top: 3px solid #6f42c1;
+}
+
+#form-contacto .form-control {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  color: white;
+}
+
+#form-contacto .form-control:focus {
+  border-color: #6f42c1;
+  box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.25);
+}
+
+#form-contacto label {
+  color: #ccc;
+}
+
+#form-contacto button {
+  background-color: #6f42c1;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#form-contacto button:hover {
+  background-color: #5a379f;
+}
