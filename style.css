@@ -446,3 +446,25 @@ footer nav a:hover {
       0 0 20px #6f42c1;
   }
 }
+
+/* Blog */
+
+.blog-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: none;
+  border-radius: 12px;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(111, 66, 193, 0.25);
+}
+
+.blog-card .card-title {
+  font-weight: bold;
+}
+
+.blog-card .card-text {
+  color: #fff;
+  line-height: 1.6;
+}
