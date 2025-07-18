@@ -20,15 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('fade-in');
+        entry.target.classList.add('visible');
       }
     });
   }, {
     threshold: 0.2
   });
 
-  document.querySelectorAll('.section').forEach(section => {
-    observer.observe(section);
+  document.querySelectorAll('.fade-in').forEach(el => {
+    observer.observe(el);
   });
   // Validación de formulario de contacto
   const contactoForm = document.getElementById("form-contacto");

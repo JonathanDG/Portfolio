@@ -12,28 +12,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#inicio">Jonathan Dev</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cv">Currículum</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
+    <nav class="sticky-top" >
+        <ul>
+            <li class="nav-item neonNav px-2"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item neonNav px-2"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+            <li class="nav-item neonNav px-2"><a class="nav-link" href="#cv">Currículum</a></li>
+            <li class="nav-item neonNav px-2"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+            <li class="nav-item neonNav px-2"><a class="nav-link" href="#blog">Blog</a></li>
+            <li class="nav-item neonNav px-2"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+
     </nav>
 
     <!-- INICIO -->
@@ -41,16 +33,16 @@
         <div class="container">
             <!-- <img src="img/Logo_Jonathan_Developer.png" alt="" class="img-fluid rounded-circle logo-personal"> -->
             <br><br>
-            <h1 class="display-3">¡Hola! Soy Desarrollador Fullstack</h1>
-            <p class="lead">Pasión por crear soluciones y experiencias digitales.</p>
-            <p class="contacto">jonathandg23@gmail.com | 📞 <a href="https://wa.me/1234567890">+52 564 242 0956</a></p>
+            <h1 class="typewriter_h1">¡Hola! Soy Jonathan Durón</h1>
+            <h2 class="typewriter_h2">Apasionado FullStack Developer.</h2>
+            <!-- <p class="contacto">jonathandg23@gmail.com | <i class="fab fa-whatsapp me-2"></i> <a href="https://wa.me/1234567890">+52 564 242 0956</a></p> -->
         </div>
     </section>
 
     <!-- SOBRE MI -->
     <section id="sobre-mi" class="section">
         <div class="container">
-            <h2 class="section-title">Sobre mí</h2>
+            <h2 class="neon  fade-in text-center">Sobre mí</h2>
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <p class="paragraph">Soy un desarrollador Full Stack Jr con experiencia en el diseño y desarrollo de
@@ -74,7 +66,7 @@
     <!-- CURRICULUM -->
     <section id="cv" class="section bg-dark text-white">
         <div class="container">
-            <h2 class="section-title">Currículum</h2>
+            <h2 class="neon fade-in">Currículum</h2>
             <p>Resumen de logros profesionales y habilidades técnicas.</p>
             <h4>Habilidades</h4>
             <div class="progress mb-3">
@@ -97,38 +89,50 @@
             <h4 class="mt-5">Experiencia Laboral</h4>
 
             <!-- Trabajo 1 -->
-            <div class="mt-4">
+            <div class="mt-4 experiencia-item fade-in">
                 <h5>Desarrollador Fullstack - <span class="text-info">Freelancer</span></h5>
                 <p class="fst-italic">Mayo 2025 - Actualidad</p>
                 <ul>
                     <li>Desarrollé de paginas web utilizando JavaScript, HTML y CSS.</li>
-                    <li>Le dí mantenimiento a aplicación web colaborativa para gestion de clientes usando .Net, HTML y Hubspot.</li>
+                    <li>Le dí mantenimiento a aplicación web colaborativa para gestion de clientes usando .Net, HTML y
+                        Hubspot.</li>
                     <li>Cree API´s para proyectos colaborativos.</li>
                 </ul>
             </div>
 
             <!-- Trabajo 2 -->
-            <div class="mt-4">
+            <div class="mt-4 experiencia-item fade-in">
                 <h5>Ingeniero de Sistemas - <span class="text-info">Mercedes Benz Star Patria</span></h5>
                 <p class="fst-italic">Diciembre 2022 - Septiembre 2024</p>
                 <ul>
-                    <li>Di mantenimiento a equipos de computadora de más de 200 empleados (laptops, desktops), servidores</li>
-                    <li>Administré equipos móviles, impresoras multifuncionales, red de telefonía empresarial de 7 agencias.</li>
-                    <li>Administré e instalé equipos de redes, sistema de cámaras de seguridad (CCTV), sistema de audio ambiental.</li>
+                    <li>Di mantenimiento a equipos de computadora de más de 200 empleados (laptops, desktops),
+                        servidores</li>
+                    <li>Administré equipos móviles, impresoras multifuncionales, red de telefonía empresarial de 7
+                        agencias.</li>
+                    <li>Administré e instalé equipos de redes, sistema de cámaras de seguridad (CCTV), sistema de audio
+                        ambiental.</li>
                     <li>Gestioné sistema de tickets y administré servidor de correos.</li>
                 </ul>
             </div>
 
             <!-- Trabajo 3 -->
-            <div class="mt-4">
+            <div class="mt-4 experiencia-item fade-in">
                 <h5>Soporte Ti - Sistemas - <span class="text-info">Joinet</span></h5>
                 <p class="fst-italic">Julio 2021 - Agosto 2022</p>
                 <ul>
                     <li>Administré equipos de computo usados como cajas de cobro de 3 agencias.</li>
-                    <li>Di mantenimiento a impresoras de tickets, impresoras multifuncionales, impresoras de etiquetas .</li>
+                    <li>Di mantenimiento a impresoras de tickets, impresoras multifuncionales, impresoras de etiquetas .
+                    </li>
                     <li>Instalé y administré sistema CCTV en 3 agencias, al rededor de 72 cámaras de seguridad.</li>
-                    <li>Asistí en el soporte de la pagina de internet de ventas de la empresa, así como en el manejo de la base de datos y el programa de ventas MyBusiness Pos.</li>
+                    <li>Asistí en el soporte de la pagina de internet de ventas de la empresa, así como en el manejo de
+                        la base de datos y el programa de ventas MyBusiness Pos.</li>
                 </ul>
+            </div>
+
+            <div class="text-center mt-5 fade-in">
+                <a href="documents/JONATHAN DURON GONZALEZ CV 2025.pdf" class="btn-descarga" download>
+                    <i class="fas fa-download me-2"></i> Descargar CV en PDF
+                </a>
             </div>
         </div>
     </section>
@@ -136,7 +140,8 @@
     <!-- PORTAFOLIO -->
     <section id="portafolio" class="section">
         <div class="container">
-            <h2 class="section-title">Portafolio</h2>
+            <h2 class="neon fade-in">Portafolio</h2>
+            <br>
             <div class="row g-4">
                 <!-- CARD EJEMPLO -->
                 <div class="col-md-4">
@@ -152,7 +157,7 @@
                 <!-- Repite otras 5 cards similares -->
                 <div class="col-md-4">
                     <div class="card portfolio-card">
-                        <img src="img/hackathon.png" class="card-img" alt="Proyecto 2">
+                        <img src="img/hackathonStore.png" class="card-img" alt="Proyecto 2">
                         <div class="card-img-overlay d-flex flex-column justify-content-end">
                             <h5 class="card-title">Hackathon Store</h5>
                             <p class="card-text">Aplicación web para gestión de tareas.</p>
@@ -163,7 +168,7 @@
 
                 <div class="col-md-4">
                     <div class="card portfolio-card">
-                        <img src="" class="card-img" alt="Proyecto 3">
+                        <img src="img/monnom.png" class="card-img" alt="Proyecto 3">
                         <div class="card-img-overlay d-flex flex-column justify-content-end">
                             <h5 class="card-title">MONNOM</h5>
                             <p class="card-text">Aplicación web para gestión de tareas.</p>
@@ -186,9 +191,9 @@
 
                 <div class="col-md-4">
                     <div class="card portfolio-card">
-                        <img src="proyecto1.jpg" class="card-img" alt="Proyecto 1">
+                        <img src="img/tizanasBlog.png" class="card-img" alt="Proyecto 5">
                         <div class="card-img-overlay d-flex flex-column justify-content-end">
-                            <h5 class="card-title">Proyecto Uno</h5>
+                            <h5 class="card-title">Blog Tizanas</h5>
                             <p class="card-text">Aplicación web para gestión de tareas.</p>
                             <a href="#" class="btn btn-primary">Ver proyecto</a>
                         </div>
@@ -199,9 +204,10 @@
     </section>
 
     <!-- BLOG -->
-    <section id="blog" class="section bg-light">
+    <section id="blog" class="section bg-dark">
         <div class="container">
-            <h2 class="section-title">Blog</h2>
+            <h2 class="neon fade-in">Blog</h2>
+            <br>
             <article class="blog-entry">
                 <h4>Mi evolución como desarrollador</h4>
                 <p class="paragraph">En este camino como desarrollador he aprendido que el crecimiento va de la mano con
@@ -236,23 +242,48 @@
         </div>
     </section>
 
-    <footer id="contacto" class="bg-dark text-white text-center py-4">
-        <div class="container">
-            <p>📧 email@ejemplo.com | 📞 <a href="https://wa.me/1234567890" class="text-white">+52 123 456 7890</a></p>
-            <p>
-                <a href="https://linkedin.com/in/tuusuario" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/tuusuario" class="text-white me-3"><i class="fab fa-github"></i></a>
+
+
+
+    <footer id="contacto" class="footer-section text-white">
+        <div class="container py-5 text-center">
+            <h4 class="mb-4 fade-in">¿Quieres trabajar conmigo?</h4>
+
+            <p class="fade-in">
+                <i class="fas fa-envelope me-2"></i> <a href="mailto:jonathandg23@gmail.com"
+                    class="footer-link">jonathandg23@gmail.com</a>
+                <br>
+                <i class="fab fa-whatsapp me-2"></i> <a href="https://wa.me/5642420956" target="_blank"
+                    class="footer-link">+52 564 242 0956</a>
             </p>
-            <nav>
-                <a href="#inicio" class="text-white me-2">Inicio</a>
-                <a href="#sobre-mi" class="text-white me-2">Sobre mí</a>
-                <a href="#cv" class="text-white me-2">Currículum</a>
-                <a href="#portafolio" class="text-white me-2">Portafolio</a>
-                <a href="#blog" class="text-white me-2">Blog</a>
-                <a href="#contacto" class="text-white">Contacto</a>
+
+            <div class="social-icons mt-3 fade-in">
+                <a href="https://www.linkedin.com/in/jonathan-dur%C3%B3n/" target="_blank" class="footer-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/JonathanDG" target="_blank" class="footer-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:email@ejemplo.com" class="footer-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <hr class="my-4" style="border-color: #6f42c1;">
+
+            <nav class="footer-nav fade-in">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#cv">Currículum</a>
+                <a href="#portafolio">Portafolio</a>
+                <a href="#blog">Blog</a>
+                <a href="#contacto">Contacto</a>
             </nav>
+
+            <p class="mt-4 small text-white">© 2025 Jonathan Durón González. Todos los derechos reservados.</p>
         </div>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>

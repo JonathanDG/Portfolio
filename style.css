@@ -1,7 +1,15 @@
 /* style.css */
 
 /* RESET BÁSICO */
-body, h1, h2, h3, h4, h5, h6, p, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,22 +17,56 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #121212;
+  background: linear-gradient(180deg, #1e1e2f 0%, #121212 100%);
   color: #ffffff;
   scroll-behavior: smooth;
 }
+
+/* Navbar*/
+
+nav {
+  max-width: 100%;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #000 25%, #000 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+.navb{
+    background-color: black;
+}
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Segoe UI";
+  text-transform:uppercase;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  margin-block: 10%;
+  
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+
+/**/
 
 .section {
   padding: 80px 0;
 }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-  color: #b388ff;
-  position: relative;
-}
 
 .section-title::after {
   content: '';
@@ -58,6 +100,7 @@ body {
 .foto-mi:hover {
   transform: scale(1.05);
 }
+
 /* SOBRE MÍ */
 .foto-mi {
   max-width: 300px;
@@ -66,7 +109,8 @@ body {
   transition: transform 0.5s;
 }
 
-.foto-mi:hover,.logo-personal:hover {
+.foto-mi:hover,
+.logo-personal:hover {
   transform: scale(1.05);
 }
 
@@ -114,7 +158,9 @@ body {
   opacity: 1;
 }
 
-.card-title, .card-text, .btn {
+.card-title,
+.card-text,
+.btn {
   color: #fff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
@@ -139,8 +185,8 @@ footer nav a:hover {
   transition: 0.3s;
 }
 
-.paragraph{
-    text-align: justify;
+.paragraph {
+  text-align: justify;
 }
 
 /* Estilos para formulario de contacto */
@@ -174,4 +220,229 @@ footer nav a:hover {
 
 #form-contacto button:hover {
   background-color: #5a379f;
+}
+
+/* Animaciones para elementos que aparecen al hacer scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animación sutil para tarjetas de experiencia laboral */
+.experiencia-item {
+  padding: 20px;
+  margin-bottom: 30px;
+  border-left: 4px solid #b388ff;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experiencia-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(179, 136, 255, 0.3);
+}
+
+/* Footer Mejorado */
+.footer-section {
+  background: linear-gradient(135deg, #1e1e2f, #121212);
+  border-top: 4px solid #6f42c1;
+  animation: fadeInUp 1s ease;
+}
+
+.footer-link {
+  color: #b388ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #d5bfff;
+}
+
+.footer-icon {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #b388ff;
+  transform: scale(1.2);
+}
+
+.footer-nav a {
+  margin: 0 10px;
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #b388ff;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-descarga {
+  display: inline-block;
+  background-color: #6f42c1;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(111, 66, 193, 0.3);
+}
+
+.btn-descarga:hover {
+  background-color: #5a379f;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+/**/
+
+.typewriter_h1 {
+  overflow: hidden;
+  border-right: .10em solid #b388ff;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 4s steps(30, end), blink-caret .75s step-end infinite;
+  font-family: 'Courier New', monospace;
+  color: #fff;
+  font-size: 4rem;
+}
+
+.typewriter_h2 {
+  overflow: hidden;
+  border-right: .10em solid #b388ff;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 4s steps(30, end), blink-caret .75s step-end infinite;
+  font-family: 'Courier New', monospace;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #b388ff;
+  }
+}
+
+/**/
+
+.neon {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow:
+    0 0 5px #6f42c1,
+    0 0 10px #6f42c1,
+    0 0 20px #b388ff,
+    0 0 40px #b388ff;
+  animation: pulseGlow 3s infinite;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.neonNav {
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow:
+    0 0 5px #6f42c1,
+    0 0 10px #6f42c1,
+    0 0 20px #b388ff,
+    0 0 40px #b388ff;
+  animation: pulseGlow 3s infinite;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+@keyframes pulseGlow {
+
+  0%,
+  100% {
+    text-shadow:
+      0 0 5px #6f42c1,
+      0 0 10px #6f42c1,
+      0 0 20px #b388ff,
+      0 0 40px #b388ff;
+  }
+
+  50% {
+    text-shadow:
+      0 0 10px #6f42c1,
+      0 0 20px #6f42c1,
+      0 0 30px #b388ff,
+      0 0 60px #b388ff;
+  }
+}
+
+/**/
+
+.matrix-effect {
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  position: relative;
+  overflow: hidden;
+  animation: matrixText 6s linear infinite;
+}
+
+@keyframes matrixText {
+  0% {
+    text-shadow:
+      0 0 10px #b388ff,
+      0 0 20px #6f42c1;
+  }
+  50% {
+    text-shadow:
+      0 5px 10px #6f42c1,
+      0 -5px 20px #b388ff;
+  }
+  100% {
+    text-shadow:
+      0 0 10px #b388ff,
+      0 0 20px #6f42c1;
+  }
 }
