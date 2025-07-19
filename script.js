@@ -50,3 +50,34 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const bloqueUno = document.getElementById("bloque-uno");
+  const bloqueDos = document.getElementById("bloque-dos");
+  let mostrarUno = true;
+
+  function alternarBloques() {
+    if (mostrarUno) {
+      bloqueUno.classList.remove("active");
+      bloqueDos.classList.add("active");
+    } else {
+      bloqueDos.classList.remove("active");
+      bloqueUno.classList.add("active");
+    }
+    mostrarUno = !mostrarUno;
+  }
+
+  // Alternar cada 10 segundos
+  setInterval(alternarBloques, 17000);
+});
+
+/**/
+
+document.querySelectorAll(".toggle-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    const card = button.closest(".blog-card");
+    card.classList.toggle("expandido");
+    button.textContent = card.classList.contains("expandido") ? "Leer menos" : "Leer más";
+  });
+});

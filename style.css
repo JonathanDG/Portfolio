@@ -114,20 +114,6 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
-/* CURRÍCULUM */
-.progress {
-  height: 30px;
-  border-radius: 20px;
-  background-color: #2b2b2b;
-}
-
-.progress-bar {
-  font-weight: bold;
-  font-size: 0.95rem;
-  border-radius: 20px;
-  line-height: 30px;
-}
-
 /* PORTAFOLIO */
 .portfolio-card {
   overflow: hidden;
@@ -162,7 +148,7 @@ nav ul li a:hover {
 .card-text,
 .btn {
   color: #fff;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 0 5px rgba(242, 242, 9, 0.925);
 }
 
 /* BLOG */
@@ -447,24 +433,113 @@ footer nav a:hover {
   }
 }
 
+
+.skill-card {
+  position: relative;
+  padding: 20px;
+  background-color: #1f1f2f;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.skill-label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.skill-level {
+  opacity: 0;
+  font-size: 0.85rem;
+  color: #bbbbbb;
+  margin-top: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.skill-card:hover .skill-level {
+  opacity: 1;
+}
+
+/**/
+
+.sobre-mi-bloque {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease, transform 1s ease;
+  display: flex;
+  flex-wrap: wrap;
+  pointer-events: none;
+}
+
+.sobre-mi-bloque.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+#sobre-mi .container {
+  position: relative;
+  min-height: 300px;
+}
+
+@media (max-width: 768px) {
+  .sobre-mi-bloque {
+    flex-direction: column;
+  }
+}
+/**/
+
+
 /* Blog */
 
+
 .blog-card {
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  border: none;
-  border-radius: 12px;
+  background-color: #2c2c3e;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px rgba(179, 136, 255, 0.2);
+  transition: all 0.5s ease;
 }
 
-.blog-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(111, 66, 193, 0.25);
+.blog-title {
+  margin-bottom: 10px;
 }
 
-.blog-card .card-title {
-  font-weight: bold;
+.blog-text {
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease;
 }
 
-.blog-card .card-text {
-  color: #fff;
-  line-height: 1.6;
+.extra-text {
+  display: inline;
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+  display: inline-block;
+}
+
+.blog-card.expandido .extra-text {
+  opacity: 1;
+  max-height: 1000px;
 }
